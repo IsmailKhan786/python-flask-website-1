@@ -1,0 +1,83 @@
+{%extends "template.html" %}
+{%block content %}
+<header>
+    <h1 class = "logo" >Flask Website</h1>
+    <p class = "sub-title">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, optio</p>
+
+    <nav>
+        <a href="{{url_for('home') }}"><i class="fa-solid fa-house"></i>Home</a>
+        <a href="{{url_for('about')}}" class="active"><i class="fa-solid fa-circle-info"></i>About</a>
+        <a href="{{url_for('contact')}}"><i class="fa-solid fa-address-book"></i>Contact</a>
+    </nav>
+</header>
+
+    <main>
+        <div class = "main-content">
+            <section class = "page-content">
+            <img class = "img-responsive border-rounded" src="https://picsum.photos/1300/400" width="1300" height="400" alt="Banner | BlueGrass Health Care">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam itaque voluptas eum commodi
+                    aspernatur
+                    deleniti iusto possimus minus, cum culpa rem quidem natus nulla? Fugit necessitatibus
+                    eveniet
+                    consequuntur illo recusandae eius omnis ex et asperiores unde atque excepturi rem
+                    sapiente debitis
+                    placeat, corporis aliquam doloremque consectetur mollitia ipsam. Fuga delectus numquam
+                    repellat laborum
+                    laudantium, nihil atque architecto inventore totam nemo vel harum a fugiat culpa sit
+                    aperiam
+                    repudiandae? Quod expedita dolorem odit placeat maiores atque blanditiis quae, vero vel,
+                    fuga ipsam,
+                    odio numquam? Eligendi consequatur natus at perferendis doloribus recusandae nisi
+                    dolorem eum molestiae,
+                    quas mollitia dolore commodi molestias delectus!</p>
+            </section>
+            <section class="features">
+                <div class="card">
+                    <h2 class="card-title">Feature 1</h2>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam commodi dolorum reiciendis iste optio.</p>
+                </div>
+                <div class="card">
+                    <h2 class="card-title">Feature 2</h2>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, delectus quae voluptatem rerum voluptate iusto laboriosam.</p>
+                </div>
+                <div class="card">
+                    <h2 class="card-title">Feature 3</h2>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro et saepe deleniti totam tempore ad. Consectetur, sunt!</p>
+                </div>
+            </section>
+        </div>
+
+
+        <div class="sidebar">
+          
+
+            <section>
+                <h4>About</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi iste hic, delectus omnis
+                    repudiandae architecto iure illum culpa soluta ad.</p>
+            </section>
+
+            <section>
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a class="facebook" href="/" target="_blank">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <span>Facebook</span>
+                    </a>
+                    <a class="instagram" href="https://www.instagram.com/mudirr_786_khanismail/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                    <a class="twitter" href="https://twitter.com" target="_blank">
+                        <i class="fa-brands fa-twitter"></i>
+                        <span>Twitter</span>
+                    </a>
+                </div>
+            </section>
+        </div>
+        
+        
+    </main>
+
+
+{%endblock%}
